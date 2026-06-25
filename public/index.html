@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cryptographic File Encoder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Cryptographic File Encoder</h1>
+    <p>Encrypt and Decrypt files securely</p>
+
+    <form id="fileForm">
+      <input type="file" id="file" name="file" required />
+
+      <select id="mode" name="mode">
+        <option value="encrypt">Encrypt</option>
+        <option value="decrypt">Decrypt</option>
+      </select>
+
+      <input type="text" id="key" name="key" placeholder="Enter secret key" required />
+
+      <button type="submit">Process File</button>
+    </form>
+
+    <div id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
